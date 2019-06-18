@@ -46,9 +46,15 @@ body{
 .logo img{
 	height: 55px; width: auto;
 }
+
+.carousel-item img{
+	width: auto;
+}
 .slider-background{
 	background:url("../img/slider/background_slider.jpg");
     background-size: cover;       /* For flexibility */
+    height: 400px;
+    overflow: hidden;
 }
 .feature-product{
 	padding: 10px 0px;
