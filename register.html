@@ -11,11 +11,14 @@
   		<link rel="shortcut icon" type="image/png" href="img/logo.png"> 
   		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="plugin/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 		
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="plugin/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
 		<title>Super Cat</title>
 	</head>
@@ -40,18 +43,42 @@
 	    			<input type="password" class="form-control mt-3"  placeholder="Password">
 	    			<input type="password" class="form-control mt-4"  placeholder="Confirm Password">
 	    			<div class="form-check mt-4">
-					  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-					  <label class="form-check-label" for="defaultCheck1">
-					    Saya telah membaca dan menyetujui <a href="">Aturan Penggunaan</a> dan <a href="">Kebijakan Privasi</a>
-					  </label>
+					    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+					    <label class="form-check-label" for="defaultCheck1">
+					    	Saya telah membaca dan menyetujui <a id="popup" href="#aturan_penggunaan">Aturan Penggunaan</a> dan <a href="kebijakan.html">Kebijakan Privasi</a>
+					    </label>
+					    <div id="aturan_penggunaan" style="display:none">
+						  	<div style="width: 600px; padding-right: 40px;">
+						  		<h4>Aturan Penggunaan</h4>
+						  		<hr class="hr_black">
+						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, tempore, vero vitae, itaque, obcaecati inventore magnam laudantium quasi iste adipisci doloribus nobis ipsa! Odio reprehenderit, nam maxime. Tempore, ea, assumenda.</p>
+						  		<ul>
+						  			<li>Consectetur adipisicing elit</li>
+						  			<li>Consectetur adipisicing elit</li>
+						  			<li>Consectetur adipisicing elit</li>
+						  		</ul>
+						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, tempore, vero vitae, itaque, obcaecati inventore magnam laudantium quasi iste adipisci doloribus nobis ipsa! Odio reprehenderit, nam maxime. Tempore, ea, assumenda.</p>
+						  	</div>
+						</div>
 					</div>
 		    	</div>
 		    	<div class="form-group text-center mt-5">
-		    		<a href=""	class="btn-yellow">Daftar</a>
-		    		<p class="mt-4">Sudah punya akun? <a href="">Silahkan Login</a></p>
+		    		<a href="login.html"	class="btn-yellow">Daftar</a>
+		    		<p class="mt-4">Sudah punya akun? <a href="login.html">Silahkan Login</a></p>
 		    	</div>
 		    </form>	
 	    </div>
+
+
+	    <script type="text/javascript">
+		$(function() {
+		    $("#popup").fancybox({
+    			'scrolling'   : 'no',
+		        'onStart': function() { $("#aturan_penggunaan").css("display","block"); },            
+		        'onClosed': function() { $("#aturan_penggunaan").css("display","none"); }
+		    });
+		});
+		</script>
 	     
 	</body>
 </html>

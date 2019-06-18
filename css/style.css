@@ -196,3 +196,36 @@ body{
 	text-decoration: none  !important;
 	background-color: #ffca05;
 }
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #e05624 !important;
+    border-color: #e05624 !important;
+}
+.address_bar {
+    border: 1px solid #dadada;
+    padding: 15px;
+}
+.edit_color{
+	padding: 0px 10px;
+	text-decoration: none;
+	color: blue;
+}
+.edit_color:hover{
+	text-decoration: none;
+}
+.delete_color{
+	padding: 0px 10px;
+	text-decoration: none;
+	color: red;
+}
+.delete_color:hover{
+	text-decoration: none;
+}
+.desc_address{
+	color: #8c8c8c;/*
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-height: 50px;*/
+}
