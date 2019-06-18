@@ -167,6 +167,13 @@ body{
     padding: 7px 17px;
     vertical-align: middle;
 }
+.btn-yellow{
+	padding: 10px 80px 10px 80px;
+	font-size: 14px;
+	color: white;
+	width: 150px;
+	background-color: #ffca05;
+}
 .detail_addtocart{
 	width: 100%;
 	padding: 10px 80px ;
