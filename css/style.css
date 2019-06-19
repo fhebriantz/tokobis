@@ -209,18 +209,20 @@ body{
 .edit_color{
 	padding: 0px 10px;
 	text-decoration: none;
-	color: blue;
+	color: #4488c4;
 }
 .edit_color:hover{
 	text-decoration: none;
+	color: #4488c4;
 }
 .delete_color{
 	padding: 0px 10px;
 	text-decoration: none;
-	color: red;
+	color: #d07b65;
 }
 .delete_color:hover{
 	text-decoration: none;
+	color: #d07b65;
 }
 .desc_address{
 	color: #8c8c8c;/*
