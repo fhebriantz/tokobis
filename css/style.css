@@ -231,3 +231,58 @@ body{
     text-overflow: ellipsis;
     max-height: 50px;*/
 }
+.list-cart{
+	color: #535353;
+}
+.cart-header{
+	background-color: #eee;
+	padding: 5px 15px;
+}
+.cart-header strong{
+	color: #e86767;
+}
+.point-cart{
+	padding: 15px 15px;
+}
+.cover-img{
+	padding-right: 30px;
+	overflow: hidden;
+	height: 100px;
+	width: 100px;
+	vertical-align: middle;
+}
+.img-sub-cart{
+	height: 100px;
+	width: auto;
+	vertical-align: middle;
+}
+.row-cart{
+	max-height: 130px  !important;
+	overflow: hidden  !important;	
+	border-top: 1px solid #ddd;
+}
+.subtitle-cart .sub1{
+	margin: 0px 0px 10px 0px !important;
+	color: #bababa;
+}
+.subtitle-cart .sub2{
+	margin: 0px 0px 10px 0px  !important;
+}
+.subtitle-cart .sub3{
+	margin: 0px 0px 10px 0px  !important;
+}
+.td_delete{
+	width: 100px;
+}
+.row-cart a{
+	text-decoration: none;
+	color: #555;
+}
+.row-cart a:hover{
+	text-decoration: none;
+	color: #555;
+}
+.ov-cart{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 50px
+}
